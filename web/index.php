@@ -44,6 +44,8 @@ mysqli_set_charset($obj_mysqli, 'utf8');
 $msg     = $_GET["msg"];
 $data    =$_GET["data"];   
 $nome   = $_GET["nome"];
+echo $msg;
+echo $nome;
   ?>
   <!-- Contact -->
   <div class="w3-container">
