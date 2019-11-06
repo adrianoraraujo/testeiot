@@ -79,9 +79,9 @@ $nome   = $_POST["nome"];
     {
      
     echo '<tr>';
-    echo '  <td>'.$string2.'</td>';
+    echo '  <td>'.$aux_query["nome"].'</td>';
     echo '  <td>'.$aux_query["data"].'</td>';
-    echo '  <td>'.$string.'</td>';
+    echo '  <td>'.$aux_query["msg"].'</td>';
     echo '</tr>';
   }
   ?>
