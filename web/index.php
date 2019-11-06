@@ -41,11 +41,7 @@ if ($obj_mysqli->connect_errno)
  
 mysqli_set_charset($obj_mysqli, 'utf8');
 
-$msg     = $_GET["msg"];
-$data    =$_GET["data"];   
-$nome   = $_GET["nome"];
-echo $msg;
-echo $nome;
+
   ?>
   <!-- Contact -->
   <div class="w3-container">
@@ -68,12 +64,18 @@ echo $nome;
         <th>Mensagem</th>
       </tr>
     </thead>
-  <?
+  <?php
+  $msg     = $_GET["msg"];
+$data    =$_GET["data"];   
+$nome   = $_GET["nome"];
+echo $msg;
+echo $nome;
   $stmt = $obj_mysqli->prepare("INSERT INTO `menssages` (`nome`,`msg`) VALUES (?,?)");
   $stmt->bind_param('ss', $nome, $msg); 
    if(!$stmt->execute())
       {
-        $erro = $stmt->error;
+     echo 'Erro Insert';  
+     $erro = $stmt->error;
       }
       
       $result = $obj_mysqli->query("SELECT * FROM `menssages`");
