@@ -41,9 +41,9 @@ if ($obj_mysqli->connect_errno)
  
 mysqli_set_charset($obj_mysqli, 'utf8');
 
-$msg     = $_POST["msg"];
-$data    =$_POST["data"];   
-$nome   = $_POST["nome"];
+$msg     = $_GET["msg"];
+$data    =$_GET["data"];   
+$nome   = $_GET["nome"];
   ?>
   <!-- Contact -->
   <div class="w3-container">
