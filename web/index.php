@@ -67,14 +67,14 @@ $nome   = $_POST["nome"];
       </tr>
     </thead>
   <?
-  $stmt = $obj_mysqli->prepare("INSERT INTO `messages` (`nome`,`msg`) VALUES (?,?)");
+  $stmt = $obj_mysqli->prepare("INSERT INTO `menssages` (`nome`,`msg`) VALUES (?,?)");
   $stmt->bind_param('ss', $nome, $msg); 
    if(!$stmt->execute())
       {
         $erro = $stmt->error;
       }
       
-      $result = $obj_mysqli->query("SELECT * FROM `messages`");
+      $result = $obj_mysqli->query("SELECT * FROM `menssages`");
   while ($aux_query = $result->fetch_assoc()) 
     {
      
