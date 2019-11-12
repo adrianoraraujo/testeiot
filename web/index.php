@@ -61,8 +61,7 @@ mysqli_set_charset($obj_mysqli, 'utf8');
       <tr class="w3-black">
         <th>Nível do Silo</th>
         <th>Momento da Refeição</th>
-        <th>Ação</th>
-      </tr>
+        </tr>
     </thead>
   <?php
   $msg     = $_GET["msg"];
@@ -88,7 +87,6 @@ echo $nome;
     echo '<tr>';
     echo '  <td>'.$aux_query["nome"].'</td>';
     echo '  <td>'.$aux_query["data"].'</td>';
-    echo '  <td>'.$aux_query["msg"].'</td>';
     echo '</tr>';
   }
   ?>
