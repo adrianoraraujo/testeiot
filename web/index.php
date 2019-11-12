@@ -46,7 +46,6 @@ mysqli_set_charset($obj_mysqli, 'utf8');
   <!-- Contact -->
   <div class="w3-container">
     <h2>Dados do Cão</h2>
-    <p></p>
     <!--
      <form action="<?=$_SERVER["PHP_SELF"]?>" method="POST">
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="nome"></p>
