@@ -14,7 +14,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
-  <img class="w3-image" src="http://petdreams.com.br/images/compulsao_alimentar.jpg" alt="" width="1500" height="700">
+  <img class="w3-circle" src="http://petdreams.com.br/images/compulsao_alimentar.jpg" alt="" style="width:50%">
   <div class="w3-display-middle" style="width:65%">
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
@@ -95,7 +95,7 @@ echo $nome;
 </div>
 
 <!-- Footer -->
-
+<footer class="w3-container w3-padding-16" style="margin-top:32px">Made By Adriano Araújo Corps<a href="adrianoraraujo.herokuapp.com" title="Adriano Araújo" target="_blank" class="w3-hover-text-green">ARAA</a></footer>
 
 <script>
 // Tabs
