@@ -69,13 +69,12 @@ $nome   = $_GET["nome"];
 if(empty($nome)){
 $msg = "Comeu";
 }
-echo $msg;
-echo $nome;
+
   $stmt = $obj_mysqli->prepare("INSERT INTO `menssages` (`nome`,`msg`) VALUES (?,?)");
   $stmt->bind_param('ss', $nome, $msg); 
    if(!$stmt->execute())
       {
-     echo 'Erro Insert';  
+       
      $erro = $stmt->error;
       }
       
