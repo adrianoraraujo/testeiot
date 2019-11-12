@@ -40,7 +40,7 @@ if ($obj_mysqli->connect_errno)
 }
  
 mysqli_set_charset($obj_mysqli, 'utf8');
-$obj_mysqli->query("SET time_zone='UTC-3'");
+$obj_mysqli->query("SET time_zone='-3:00'");
 
   ?>
   <!-- Contact -->
