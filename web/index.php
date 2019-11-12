@@ -14,7 +14,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
-  <img class="w3-circle" src="http://petdreams.com.br/images/compulsao_alimentar.jpg" alt="" style="width:50%">
+  <img class="w3-circle" src="http://petdreams.com.br/images/compulsao_alimentar.jpg" alt="" style="width:100%;min-height:350px;max-height:600px;">
   <div class="w3-display-middle" style="width:65%">
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
@@ -95,8 +95,9 @@ echo $nome;
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-16" style="margin-top:32px">Made By Adriano Araújo Corps<a href="adrianoraraujo.herokuapp.com" title="Adriano Araújo" target="_blank" class="w3-hover-text-green">ARAA</a></footer>
-
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  
+  <p>Made By <a href="https://adrianoraraujo.herokuapp.com" target="_blank">ARAA</a></p>
 <script>
 // Tabs
 function openLink(evt, linkName) {
